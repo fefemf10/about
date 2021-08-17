@@ -8,10 +8,16 @@
  src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
  font-style: normal;
 }
+@font-face {
+ font-family: "JetBrainsMono-ExtraBold";
+ src: url("../fonts/JetBrainsMono-ExtraBold.ttf") format("truetype");
+ font-style: normal;
+}
 :root{
 	--size-rounded-control: 0.25rem;
 	--font-standard: "JetBrainsMono Regular";
 	--font-bold: "JetBrainsMono Bold";
+	--color-brand: #5da545;
 }
 html{
 	height: 100vh;
@@ -26,11 +32,15 @@ body{
 	font-family: var(--font-standard);
 }
 header{
-	height: 5vh;
-	padding: 1vh;
+	height: 2.5em;
+	padding: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--bg-raised-color);
 }
 nav{
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	gap: 1em;
@@ -46,24 +56,59 @@ nav a{
 	border-radius: var(--size-rounded-control);
 }
 nav button{
-	padding: 10px;
 	display: flex;
 	align-items: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: var(--bg-button-color);
 	border: none;
 	border-radius: var(--size-rounded-control);
-
 }
-nav button svg{
-	color: var(--text-button-color);
+nav a:hover{
+	color: var(--color-brand);
 }
-nav button:hover
-{
+#theme-switcher svg{
+	height: 80%;
+	padding: 10px;
+	stroke: var(--text-button-color);
+}
+#theme-switcher svg:hover{
+	stroke: var(--color-brand);
+	fill: var(--color-brand);
+}
+nav button:hover{
 	cursor: pointer;
 }
 main{
 	background-color: var(--bg-color);
 	flex-grow: 1;
+	display: grid;
+	padding: 10px;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+}
+main .post{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 10px;
+}
+main .post .lang{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: var(--bg-raised-color);
+}
+main .post .lang p{
+	color: var(--text-color);
+	font-family: "JetBrainsMono-ExtraBold";
+	font-size: 1.25em;
+	padding: 10px;
+}
+main .post .lang:first-child{
+	color: var(--text-color);
+	font-size: 1em;
 }
 footer{
 	background-color: var(--bg-raised-color);
