@@ -43,7 +43,7 @@ nav{
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	gap: 1em;
+	gap: 0.5em;
 }
 nav a{
 	padding: 10px;
@@ -86,25 +86,28 @@ main{
 	display: grid;
 	padding: 10px;
 	grid-gap: 30px;
-	grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, 1fr);
 }
 main .post{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-gap: 10px;
 }
 main .post .lang{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
 	background: var(--bg-raised-color);
+	padding: 10px;
 }
 main .post .lang p{
 	color: var(--text-color);
 	font-family: "JetBrainsMono-ExtraBold";
-	font-size: 1.25em;
-	padding: 10px;
+	font-size: 1em;
+	
 }
 main .post .lang:first-child{
 	color: var(--text-color);
@@ -113,4 +116,7 @@ main .post .lang:first-child{
 footer{
 	background-color: var(--bg-raised-color);
 	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
