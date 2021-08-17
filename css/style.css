@@ -1,0 +1,71 @@
+@font-face {
+ font-family: "JetBrainsMono Regular";
+ src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+ font-style: normal;
+}
+@font-face {
+ font-family: "JetBrainsMono Bold";
+ src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
+ font-style: normal;
+}
+:root{
+	--size-rounded-control: 0.25rem;
+	--font-standard: "JetBrainsMono Regular";
+	--font-bold: "JetBrainsMono Bold";
+}
+html{
+	height: 100vh;
+}
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	margin: 0px;
+	color: var(--text-color);
+	font-family: var(--font-standard);
+}
+header{
+	height: 5vh;
+	padding: 1vh;
+	background-color: var(--bg-raised-color);
+}
+nav{
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+nav a{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background-color: var(--bg-button-color);
+	text-decoration: none;
+	font-family: var(--font-bold);
+	color: var(--text-button-color);
+	border-radius: var(--size-rounded-control);
+}
+nav button{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background-color: var(--bg-button-color);
+	border: none;
+	border-radius: var(--size-rounded-control);
+
+}
+nav button svg{
+	color: var(--text-button-color);
+}
+nav button:hover
+{
+	cursor: pointer;
+}
+main{
+	background-color: var(--bg-color);
+	flex-grow: 1;
+}
+footer{
+	background-color: var(--bg-raised-color);
+	height: 5vh;
+}

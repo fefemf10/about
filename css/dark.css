@@ -1,0 +1,8 @@
+[data-theme="dark"]{
+	--bg-color: #171719;
+	--bg-raised-color: #222224;
+	--bg-button-color: #343438;
+	--text-color: #cecece;
+	--text-dark-color: #fbf8ec;
+	--text-button-color: var(--text-color);
+}

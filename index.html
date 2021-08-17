@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="color-scheme" content="dark light">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/light.css">
+	<link rel="stylesheet" href="css/dark.css">
+	<title>Обо мне</title>
+	<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) {
+    document.documentElement.setAttribute("data-theme", "light");
+    var themeSwitcher = document.getElementById("theme-switcher");
+
+    themeSwitcher.onclick = function() {
+      		var currentTheme = document.documentElement.getAttribute("data-theme");
+      		var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      		themeSwitcher.innerHTML = switchToTheme === "dark" ? '<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>' : '<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+      		
+      		document.documentElement.setAttribute("data-theme", switchToTheme);
+    	}
+  	});
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Главная</a>
+			<a href="">Жизнь</a>
+			<a href="">Программирование</a>
+			<button id="theme-switcher">
+				<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+			</button>
+			<button>
+				<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+			</button>
+		</nav>
+	</header>
+	<main>
+		asd
+	</main>
+	<footer>
+		asdfd
+	</footer>
+</body>
+</html>
