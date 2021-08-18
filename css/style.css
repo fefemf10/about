@@ -83,19 +83,22 @@ nav button:hover{
 main{
 	background-color: var(--bg-color);
 	flex-grow: 1;
-	display: grid;
 	padding: 10px;
+}
+.main{
+	display: grid;
+	
 	grid-gap: 30px;
 	align-content: flex-start;
 	grid-template-columns: repeat(auto-fill, 1fr);
 }
-main .post{
+main .mainpost{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	grid-template-rows: repeat(auto-fill, minmax(10vh, 1fr));
 	grid-gap: 10px;
 }
-main .post div{
+main .mainpost div{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -104,16 +107,40 @@ main .post div{
 	background: var(--bg-raised-color);
 	padding: 10px;
 }
-main .post div p{
+main .mainpost div p{
 	color: var(--text-color);
 	font-family: "JetBrainsMono-ExtraBold";
 	font-size: 1em;
 	
 }
-main .post div:first-child{
+main .mainpost div:first-child{
 	color: var(--text-color);
 	font-size: 1em;
 }
+.life{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+main .lifepost h3{
+	margin: 0;
+	padding: 0;
+}
+main .lifepost{
+	margin: 0 20%;
+	text-align: center;
+	padding: 1em;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--bg-raised-color);
+}
+
+
+
+
 footer{
 	background-color: var(--bg-raised-color);
 	height: 5vh;
