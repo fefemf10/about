@@ -87,7 +87,6 @@ main{
 }
 .main{
 	display: grid;
-	
 	grid-gap: 30px;
 	align-content: flex-start;
 	grid-template-columns: repeat(auto-fill, 1fr);
@@ -103,7 +102,7 @@ main .mainpost div{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-radius: 10px;
+	border-radius: 1em;
 	background: var(--bg-raised-color);
 	padding: 10px;
 }
@@ -131,15 +130,30 @@ main .lifepost{
 	margin: 0 20%;
 	text-align: center;
 	padding: 1em;
-	border-radius: 10px;
+	border-radius: 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--bg-raised-color);
 }
 
+.programming{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+}
 
+main .progpost h3{
+	margin: 0;
+	padding: 0;
+}
 
+main .progpost{
+	text-align: center;
+	padding: 1em;
+	border-radius: 1em;
+	background-color: var(--bg-raised-color);
+}
 
 footer{
 	background-color: var(--bg-raised-color);
