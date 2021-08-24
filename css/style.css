@@ -138,14 +138,21 @@ main .lifepost{
 }
 
 .programming{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
 
 main .progpost h3{
 	margin: 0;
 	padding: 0;
+}
+
+@media screen and (min-width: 800px){
+	main .progpost{
+	margin: 0 12.5%;
+	max-width: 75%;
+}
 }
 
 main .progpost{
@@ -154,6 +161,8 @@ main .progpost{
 	border-radius: 1em;
 	background-color: var(--bg-raised-color);
 }
+
+
 
 footer{
 	background-color: var(--bg-raised-color);
